@@ -1,0 +1,47 @@
+Name: Sawyer Thompson
+Red ID #: 823687079
+
+This program has many different methods and characteristics that can be found within a sport. It has two (trees) the
+Player part, and the Sport Team tree.
+
+The player part has three classes, one as the abstract class Player and then there
+are currently two sports players that are added, Baseball and Soccer. Both players have a set position method
+as required by Player. Each player additionally has their own methods that are a characteristic of their sport.
+For example the Baseball player class has getERA while the SoccerPlayer class has getGoals.
+
+The Sport Team tree begins with an interface SportTeam, and is currently followed by two sub-classes,
+Baseball and Soccer. The Baseball class has two different sorts to sort the BA, Slugging, OBP, ERA and also has
+a binary search that looks for a number of homeRuns and to see if a player has that amount of homeRuns. The Soccer
+class has a Bubble Sort to sort based on Most Goals.Both Sports also hold a field of players and use searches to
+add to the field, and check to make sure that they are empty before adding them.
+
+The main goal of this program is to create a team of players for a specific Sport.
+
+
+
+The Abstract Player class displays specific methods that must be implemented by a Sport Player as well as setting
+and accessing the player name through the constructor.
+
+The Baseball Player class describes a player and creates methods to add and get the different statistics of a
+Baseball player such as NumHomeRuns or Batting Average as well as a choice of different positions that can be
+found on a Baseball Field such as P or 1B.
+
+The SoccerPlayer class describes a player and creates methods add and get the different statistics of a
+SoccerPlayer player such as NumGoals as well as a choice of different positions that can be found on a Soccer Field
+such as Forward or Goal Keeper.
+
+The SportTeam Interface displays methods that must be implemented by a specific Sport.
+
+The Baseball class implements all SportTeam methods and has certain searches and sorts that only apply to a Baseball
+team such as sort based on BA or Slugging or search for a certain number of HomeRuns as well as creating a heatMap of
+playerNumbers. It also adds or removes up to the 9 players that can be found on the Baseball field.
+
+The Soccer class implements all SportTeam methods and has certain searches and sorts that only apply to a Baseball
+such as sort based on Goals as well as creating a heatMap of playerNumbers. It also adds or removes up to the 11
+players that can be found on the Soccer field.
+
+The Unit Test has 5 tests. 1player() (runs through 1 baseball player and 1 soccer player),
+testingBinarySearch() (Runs through and searches for a specific number of HomeRuns)
+fullTeamBaseball() (runs through a full team of Baseball Players)
+fullTeamSoccer() (runs through a full team of Soccer Players)
+testingHashMap(); (Tests the HashMap of Players and Players numbers)
